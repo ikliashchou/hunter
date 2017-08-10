@@ -4,9 +4,9 @@
 cmake_minimum_required(VERSION 3.0)
 set(ENV{POLLY_IOS_DEVELOPMENT_TEAM} "H6WR54S268")
 
+set(TESTING_CONFIG_OPT FILEPATH ${CMAKE_CURRENT_LIST_DIR}/config.cmake)
 # Emulate HunterGate:
 # * https://github.com/hunter-packages/gate
-set(TESTING_CONFIG_OPT FILEPATH ${CMAKE_CURRENT_LIST_DIR}/config.cmake)
 include("../common.cmake")
 
 project(download-opencvextra)
