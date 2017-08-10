@@ -6,9 +6,10 @@ set(ENV{POLLY_IOS_DEVELOPMENT_TEAM} "H6WR54S268")
 
 # Emulate HunterGate:
 # * https://github.com/hunter-packages/gate
+set(TESTING_CONFIG_OPT FILEPATH ${CMAKE_CURRENT_LIST_DIR}/config.cmake)
 include("../common.cmake")
 
-project(download-opencv)
+project(download-opencvextra)
 
 hunter_add_package(OpenCV)
 find_package(OpenCV REQUIRED)
